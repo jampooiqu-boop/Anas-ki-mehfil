@@ -5,33 +5,28 @@
 <title>Anas Ki Mehfil</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#070707;color:#fff;font-family:'Noto Nastaliq Urdu',serif}
-.top{text-align:center;padding:26px 16px;background:radial-gradient(ellipse at top,#1d1808,#070707)}
-.top h1{font-size:42px;color:#d4af37;text-shadow:0 0 20px #d4af3755}
-.top p{font-family:sans-serif;font-size:10px;letter-spacing:4px;color:#8a7a4a;margin-top:4px}
-.mid{margin:14px auto;width:65%;max-width:260px;background:linear-gradient(135deg,#16130a,#1f1b0f);border-radius:50px 14px 50px 14px;border:1.5px solid #d4af37;padding:10px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 18px rgba(212,175,55,0.2);justify-content:center}
-.profile{width:42px;height:42px;min-width:42px;border-radius:50%;border:2px solid #d4af37;object-fit:cover;flex-shrink:0}
-.salam{font-size:20px;color:#f3d36a;font-weight:700;letter-spacing:0.5px}
-.sher{margin:12px 16px;background:linear-gradient(135deg,#d4af37,#f6e27a);color:#000;border-radius:16px;padding:14px;text-align:center;box-shadow:0 6px 18px rgba(212,175,55,0.3)}
-.sher div{font-size:18px;line-height:1.8;font-weight:700}
-.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:14px 16px}
-.tab{background:#111;border:1px solid #d4af37;border-radius:12px;padding:10px;text-align:center;cursor:pointer}
-.tab.active{background:#d4af37;color:#000;box-shadow:0 0 14px #d4af3766}
-.tab .lbl{font-family:sans-serif;font-weight:700;display:block;font-size:13px;margin-top:3px}
-.content{margin:0 16px 20px;background:#101010;border-radius:14px;padding:10px;min-height:200px;border:1px solid #1e1e1e}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#070707;color:#fff;font-family:'Noto Nastaliq Urdu',serif}
+.top{text-align:center;padding:26px 16px;background:radial-gradient(ellipse at top,#1d1808,#070707)}.top h1{font-size:42px;color:#d4af37}.top p{font-family:sans-serif;font-size:10px;letter-spacing:4px;color:#8a7a4a;margin-top:4px}
+.mid{margin:14px auto;width:65%;max-width:260px;background:linear-gradient(135deg,#16130a,#1f1b0f);border-radius:50px 14px 50px 14px;border:1.5px solid #d4af37;padding:10px 16px;display:flex;align-items:center;gap:12px;justify-content:center}
+.profile{width:42px;height:42px;min-width:42px;border-radius:50%;border:2px solid #d4af37;object-fit:cover}
+.salam{font-size:20px;color:#f3d36a;font-weight:700}
+.sher{margin:12px 16px;background:linear-gradient(135deg,#d4af37,#f6e27a);color:#000;border-radius:16px;padding:14px;text-align:center}.sher div{font-size:18px;line-height:1.8;font-weight:700}
+.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:14px 16px}.tab{background:#111;border:1px solid #d4af37;border-radius:12px;padding:10px;text-align:center;cursor:pointer}.tab.active{background:#d4af37;color:#000}.tab.lbl{font-family:sans-serif;font-weight:700;display:block;font-size:13px;margin-top:3px}
+.content{margin:0 16px 20px;background:#101010;border-radius:14px;padding:12px;min-height:220px;border:1px solid #1e1e1e}
 .panel{display:none}.panel.active{display:block}
-.card{background:#181818;padding:10px;border-radius:10px;margin:7px 0;display:flex;justify-content:space-between;align-items:center;font-size:15px}
-.play{background:#d4af37;border:none;border-radius:18px;padding:5px 12px;font-weight:700;font-size:12px}
-.vbox{background:#000;border:1px solid #2a2a2a;height:120px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:7px 0;font-size:14px}
-.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.ph{height:90px;background:#1c1c1c;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:13px}
+.card{background:#181818;padding:10px;border-radius:10px;margin:8px 0;display:flex;justify-content:space-between;align-items:center}
+.play{background:#d4af37;border:none;border-radius:18px;padding:6px 14px;font-weight:700;cursor:pointer}
+.vbox{background:#000;border:1px solid #2a2a2a;height:160px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:8px 0;overflow:hidden}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ph{height:100px;background:#1c1c1c;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden}.ph img{width:100%;height:100%;object-fit:cover}
+.up{width:100%;padding:8px;background:#222;border:1px dashed #d4af37;border-radius:8px;color:#aaa;margin-bottom:10px;text-align:center;cursor:pointer;font-family:sans-serif;font-size:13px}
+audio{width:100%;margin-top:6px} video{width:100%;height:100%;object-fit:cover}
 </style>
 </head>
 <body>
 <div class="top"><h1>محفل سخن</h1><p>ANAS KI MEHFIL</p></div>
 
 <div class="mid">
-<img class="profile" src="anas.jpg" onerror="this.outerHTML='<div class=profile>👤</div>'">
+<img class="profile" src="anas.jpg" alt="profile">
 <div class="salam">السلام علیکم!</div>
 </div>
 
@@ -44,9 +39,23 @@ body{background:#070707;color:#fff;font-family:'Noto Nastaliq Urdu',serif}
 </div>
 
 <div class="content">
-<div id="voice" class="panel active"><div class="card"><span>دل کی باتیں</span><button class="play">Play</button></div><div class="card"><span>شام کا افسانہ</span><button class="play">Play</button></div></div>
-<div id="video" class="panel"><div class="vbox">🎬 Video</div></div>
-<div id="photo" class="panel"><div class="pgrid"><div class="ph">📷 1</div><div class="ph">📷 2</div><div class="ph">📷 3</div><div class="ph">📷 4</div></div></div>
+<div id="voice" class="panel active">
+<label class="up">+ Audio Upload Karo<input type="file" id="audIn" accept="audio/*" hidden onchange="addAudio(this)"></label>
+<div id="voiceList">
+<div class="card"><span>دل کی باتیں (Demo)</span><button class="play" onclick="playDemo(this)">Play</button></div>
+</div>
+<audio id="player" controls style="display:none;width:100%;margin-top:10px"></audio>
+</div>
+
+<div id="video" class="panel">
+<label class="up">+ Video Upload Karo<input type="file" id="vidIn" accept="video/*" hidden onchange="addVideo(this)"></label>
+<div id="videoList"><div class="vbox">🎬 Demo Video - Upload karo</div></div>
+</div>
+
+<div id="photo" class="panel">
+<label class="up">+ Photo Upload Karo<input type="file" id="imgIn" accept="image/*" multiple hidden onchange="addPhoto(this)"></label>
+<div class="pgrid" id="photoGrid"><div class="ph">📷</div><div class="ph">📷</div><div class="ph">📷</div><div class="ph">📷</div></div>
+</div>
 </div>
 
 <script>
@@ -56,6 +65,44 @@ function openTab(id, el){
  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
  el.classList.add('active');
 }
+function addAudio(input){
+ if(input.files[0]){
+  const url = URL.createObjectURL(input.files[0]);
+  const name = input.files[0].name.replace(/\.[^/.]+$/, "");
+  const div = document.createElement('div');
+  div.className='card';
+  div.innerHTML = '<span>'+name+'</span><button class="play" onclick="playUrl(\''+url+'\')">Play</button>';
+  document.getElementById('voiceList').prepend(div);
+  playUrl(url);
+ }
+}
+function playUrl(url){
+ const p=document.getElementById('player');
+ p.src=url; p.style.display='block'; p.play();
+}
+function playDemo(btn){
+ alert('Demo hai - apna audio upload karo upar se!');
+}
+function addVideo(input){
+ if(input.files[0]){
+  const url = URL.createObjectURL(input.files[0]);
+  const box = document.createElement('div');
+  box.className='vbox';
+  box.innerHTML='<video src="'+url+'" controls></video>';
+  document.getElementById('videoList').prepend(box);
+ }
+}
+function addPhoto(input){
+ const grid=document.getElementById('photoGrid');
+ grid.innerHTML='';
+ for(let file of input.files){
+  const url=URL.createObjectURL(file);
+  const d=document.createElement('div'); d.className='ph';
+  d.innerHTML='<img src="'+url+'">';
+  grid.appendChild(d);
+ }
+}
+document.querySelectorAll('.up').forEach(l=>{l.addEventListener('click',function(){this.querySelector('input').click()})});
 </script>
 </body>
 </html>
