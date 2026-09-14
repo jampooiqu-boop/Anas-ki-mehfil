@@ -1,1 +1,60 @@
-<!DOCTYPE html><html lang="ur" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Anas Ki Mehfil</title><link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#08070a;color:#fff;font-family:sans-serif}.h{text-align:center;padding:24px;border-bottom:1px solid #d4af3720}.h h1{font-family:'Noto Nastaliq Urdu';font-size:40px;color:#d4af37}.c{max-width:800px;margin:auto;padding:16px}.card{background:linear-gradient(135deg,#d4af37,#f6e27a);color:#000;border-radius:16px;padding:20px;text-align:center;margin:16px 0;font-family:'Noto Nastaliq Urdu';font-size:22px;line-height:2}.t{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}.tb{background:#15131a;border:1.5px solid #d4af3740;border-radius:12px;padding:14px;text-align:center;cursor:pointer}.tb.active{border-color:#d4af37;background:#1e1b12}.box{background:#111015;border:1px solid #d4af3720;border-radius:14px;padding:14px;margin-top:12px;min-height:200px}.p{display:none}.p.active{display:block}.it{background:#1a191f;padding:10px;border-radius:8px;margin:8px 0;display:flex;justify-content:space-between}</style></head><body><div class="h"><h1>محفل سخن</h1><p style="font-size:10px;letter-spacing:4px;color:#8a7a4a">ANAS KI MEHFIL - PREMIUM</p></div><div class="c"><div class="card">دل کے تہہ خانوں میں بھی حشر برپا ہے ہر اک آرزو<br>ہر شکست کے بعد ہوتا ہے سفر نکھرا ہوا</div><div class="t"><div class="tb active" onclick="op('a',this)">🎙️<br><b>Voice</b></div><div class="tb" onclick="op('b',this)">🎬<br><b>Video</b></div><div class="tb" onclick="op('c',this)">📸<br><b>Photo</b></div></div><div class="box"><div id="a" class="p active"><div class="it"><span>دل کی باتیں</span><button>Play</button></div><div class="it"><span>شام کا افسانہ</span><button>Play</button></div></div><div id="b" class="p">Video section jald</div><div id="c" class="p">Photo section jald</div></div></div><script>function op(id,e){document.querySelectorAll('.p').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.tb').forEach(x=>x.classList.remove('active'));e.classList.add('active')}</script></body></html>
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محفل سخن - Anas Ki Mehfil</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:'Noto Nastaliq Urdu',serif}
+.top{background:linear-gradient(180deg,#1a160a 0%, #0a0a0a 100%);text-align:center;padding:30px 16px 20px}
+.top h1{font-size:52px;color:#d4af37;font-weight:700}
+.top p{font-family:sans-serif;letter-spacing:4px;font-size:12px;color:#8a7a4a;margin-top:6px}
+.mid{padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.profile{width:58px;height:58px;border-radius:50%;border:2px solid #d4af37;display:flex;align-items:center;justify-content:center;background:#151310;font-size:26px}
+.greet{text-align:right}
+.greet .salam{font-size:32px;color:#d4af37}
+.greet .sub{font-size:20px;color:#ddd;margin-top:4px}
+.sher-wrap{padding:0 16px}
+.sher{background:linear-gradient(135deg,#d4af37,#e9c86a,#c9a030,#d4af37);border-radius:28px;padding:26px 18px;text-align:center;color:#1a1400}
+.sher .line{font-size:26px;line-height:2.1;font-weight:600}
+.sher .author{margin-top:12px;font-size:18px}
+.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;padding:18px 16px}
+.tab{background:#111;border:1.5px solid #d4af37;border-radius:18px;padding:18px 6px;text-align:center;cursor:pointer}
+.tab.active{background:#1e1b0f;box-shadow:0 0 18px rgba(212,175,55,0.4);border-color:#f6e27a}
+.tab .ico{font-size:32px;display:block}
+.tab .lbl{font-family:sans-serif;font-weight:700;color:#d4af37;margin-top:10px;font-size:15px;display:block}
+.content{margin:6px 16px 20px;background:#151515;border:1px solid #d4af3720;border-radius:20px;padding:14px;min-height:220px}
+.panel{display:none}.panel.active{display:block}
+.item{background:#1e1c16;border-radius:12px;padding:12px;display:flex;justify-content:space-between;align-items:center;margin:10px 0}
+.btn{background:linear-gradient(90deg,#d4af37,#f6e27a);color:#000;border:none;border-radius:20px;padding:8px 18px;font-weight:700;cursor:pointer}
+.empty{text-align:center;padding:60px 10px;color:#7a6a3a}
+.foot{text-align:center;padding:24px;color:#5a4f2a;font-family:sans-serif;font-size:10px;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="top"><h1>محفل سخن</h1><p>ANAS KI MEHFIL • PREMIUM</p></div>
+<div class="mid"><div class="profile">👤</div><div class="greet"><div class="salam">السلام، علی</div><div class="sub">آج کے لیے نیا کلام</div></div></div>
+<div class="sher-wrap"><div class="sher"><div class="line">دل کے اندھیروں میں بھی جلتا ہے چراغ آرزو</div><div class="line">ہر شکست کے بعد ہوتا ہے سفر پھر نو</div><div class="author">— جاوید اقبال —</div></div></div>
+<div class="tabs">
+<div class="tab active" onclick="openTab('voice',this)"><span class="ico">🎙️</span><span class="lbl">Voice</span></div>
+<div class="tab" onclick="openTab('video',this)"><span class="ico">▶️</span><span class="lbl">Video</span></div>
+<div class="tab" onclick="openTab('photo',this)"><span class="ico">📷</span><span class="lbl">Photo</span></div>
+</div>
+<div class="content">
+<div id="voice" class="panel active"><div class="item"><span style="font-size:20px">دل کی باتیں - آواز ۱</span><button class="btn" onclick="alert('Voice 1')">Play</button></div><div class="item"><span style="font-size:20px">شام کا افسانہ</span><button class="btn" onclick="alert('Voice 2')">Play</button></div></div>
+<div id="video" class="panel"><div class="empty">🎬 Video Section<br><br><button class="btn">Add Video</button></div></div>
+<div id="photo" class="panel"><div class="empty">📸 Photo Section<br><br><button class="btn">Add Photo</button></div></div>
+</div>
+<div class="foot">MADE WITH عشق • ANAS KI MEHFIL 2026</div>
+<script>
+function openTab(id, el){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
