@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anas Ki Mehfil</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{background:#080808;color:#fff;font-family:'Noto Nastaliq Urdu',serif}
-.top{text-align:center;padding:28px 16px;background:#120e03}.top h1{font-size:48px;color:#d4af37}.top p{font-family:sans-serif;letter-spacing:3px;color:#7a6a3a;font-size:11px}
-.mid{padding:12px 16px;display:flex;justify-content:space-between}.profile{width:50px;height:50px;border-radius:50%;border:2px solid #d4af37;display:flex;align-items:center;justify-content:center}
-.salam{font-size:28px;color:#d4af37}.sub{font-size:18px;color:#bbb}
-.sher{margin:0 16px;background:linear-gradient(135deg,#d4af37,#f3d36a);color:#1a1500;border-radius:24px;padding:20px;text-align:center}
-.sher div{font-size:22px;line-height:2}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#080808;color:#fff;font-family:'Noto Nastaliq Urdu',serif}
+.top{text-align:center;padding:28px 16px;background:#121212}
+.top h1{font-size:44px;color:#d4af37}
+.top p{font-family:sans-serif;font-size:11px;letter-spacing:3px;color:#8a7a4a}
+.mid{margin:14px 16px;background:#151515;border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px;border:1px solid #222}
+.profile{width:48px;height:48px;border-radius:50%;border:2px solid #d4af37;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.greet{flex:1;min-width:0}
+.salam{font-size:22px;color:#d4af37;line-height:1.4;white-space:normal;word-wrap:break-word}
+.sub{font-size:16px;color:#aaa;margin-top:4px}
+.sher{margin:0 16px;background:linear-gradient(135deg,#d4af37,#f6e27a);color:#000;border-radius:18px;padding:16px;text-align:center}
+.sher div{font-size:19px;line-height:1.9;font-weight:600}
 .tabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:16px}
-.tab{background:#121212;border:1px solid #d4af37;border-radius:14px;padding:16px;text-align:center;cursor:pointer}.tab.active{background:#d4af37;color:#000;box-shadow:0 0 20px #d4af3766}
-.tab .lbl{font-family:sans-serif;font-weight:700;font-size:14px;display:block;margin-top:6px}
-.content{margin:0 16px 20px;background:#131313;border-radius:16px;padding:12px;min-height:260px}
+.tab{background:#121212;border:1px solid #d4af37;border-radius:14px;padding:14px;text-align:center;cursor:pointer}
+.tab.active{background:#d4af37;color:#000}
+.tab .lbl{font-family:sans-serif;font-weight:700;display:block;margin-top:4px;font-size:14px}
+.content{margin:0 16px 20px;background:#121212;border-radius:14px;padding:12px;min-height:240px}
 .panel{display:none}.panel.active{display:block}
-.card{background:#1d1d1d;border-radius:12px;padding:12px;margin:10px 0;display:flex;justify-content:space-between;align-items:center}
-.play{background:#d4af37;color:#000;border:none;border-radius:20px;padding:8px 16px;font-weight:700}
-.videoBox{background:#000;border-radius:12px;height:160px;display:flex;align-items:center;justify-content:center;margin:10px 0;border:1px solid #333}
-.photoGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ph{height:120px;background:#222;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #333}
+.card{background:#1d1d1d;padding:12px;border-radius:10px;margin:8px 0;display:flex;justify-content:space-between;align-items:center}
+.play{background:#d4af37;border:none;border-radius:20px;padding:6px 14px;font-weight:700}
+.vbox{background:#000;border:1px solid #333;height:140px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:8px 0}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ph{height:100px;background:#222;border-radius:10px;display:flex;align-items:center;justify-content:center}
 </style>
 </head>
 <body>
-<div class="top"><h1>محفل سخن</h1><p>ANAS KI MEHFIL PREMIUM</p></div>
-<div class="mid"><div class="profile">👤</div><div><div class="salam">السلام علیکم</div><div class="sub">آج کے لیے نیا کلام</div></div></div>
+<div class="top"><h1>محفل سخن</h1><p>ANAS KI MEHFIL</p></div>
+<div class="mid">
+<div class="profile">👤</div>
+<div class="greet">
+<div class="salam">السلام علیکم انس بھائی!</div>
+<div class="sub">آج کے لیے نیا کلام</div>
+</div>
+</div>
 <div class="sher"><div>دل کے اندھیروں میں بھی جلتا ہے چراغ آرزو</div><div>ہر شکست کے بعد ہوتا ہے سفر پھر نو</div></div>
 <div class="tabs">
-<div class="tab active" onclick="openTab('voice',this)"><span>🎙️</span><span class="lbl">Voice</span></div>
-<div class="tab" onclick="openTab('video',this)"><span>▶️</span><span class="lbl">Video</span></div>
-<div class="tab" onclick="openTab('photo',this)"><span>📷</span><span class="lbl">Photo</span></div>
+<div class="tab active" onclick="openTab('voice',this)">🎙️<span class="lbl">Voice</span></div>
+<div class="tab" onclick="openTab('video',this)">▶️<span class="lbl">Video</span></div>
+<div class="tab" onclick="openTab('photo',this)">📷<span class="lbl">Photo</span></div>
 </div>
 <div class="content">
-<div id="voice" class="panel active">
-<div class="card"><span>دل کی باتیں - Voice 1</span><audio controls style="width:110px"></audio></div>
-<div class="card"><span>شام کا افسانہ - Voice 2</span><button class="play" onclick="alert('Yahan aapki awaz lagegi!')">Play ▶</button></div>
-<div class="card"><span>تنہائی کا غم - Voice 3</span><button class="play" onclick="alert('Yahan aapki awaz lagegi!')">Play ▶</button></div>
-</div>
-<div id="video" class="panel">
-<div class="videoBox">🎬 Aapki Video Yahan Chalegi<br>(Sample Video)</div>
-<div class="videoBox" style="background:#1a1200;color:#d4af37">▶️ Mehfil ki Shaam - Video 2</div>
-</div>
-<div id="photo" class="panel">
-<div class="photoGrid"><div class="ph">📷 Photo 1</div><div class="ph">📷 Photo 2</div><div class="ph">📷 Photo 3</div><div class="ph">📷 Photo 4</div></div>
-</div>
+<div id="voice" class="panel active"><div class="card"><span>دل کی باتیں</span><button class="play">Play</button></div><div class="card"><span>شام کا افسانہ</span><button class="play">Play</button></div></div>
+<div id="video" class="panel"><div class="vbox">🎬 Video</div><div class="vbox">🎬 Mehfil</div></div>
+<div id="photo" class="panel"><div class="pgrid"><div class="ph">📷 1</div><div class="ph">📷 2</div><div class="ph">📷 3</div><div class="ph">📷 4</div></div></div>
 </div>
 <script>
 function openTab(id, el){
